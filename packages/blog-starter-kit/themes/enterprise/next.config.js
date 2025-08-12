@@ -74,17 +74,17 @@ const config = {
 		],
 	},
 	async rewrites() {
-    return [
-      {
-        source: "/blog",
-        destination: "https://digitalagents.in/blog", 
-      },
-      {
-        source: "/blog/:path*",
-        destination: "https://digitalagents.in/blog/:path*",
-      },
-    ];
-  },
+		return [
+			{
+				source: '/ping/data-event',
+				destination: `${ANALYTICS_BASE_URL}/api/data-event`,
+			},
+			{
+				source: '/api/analytics',
+				destination: `${HASHNODE_ADVANCED_ANALYTICS_URL}/api/analytics`,
+			},
+		];
+	},
 	async redirects() {
 		return await getRedirectionRules();
 	},
