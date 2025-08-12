@@ -77,11 +77,11 @@ const config = {
     return [
       {
         source: "/blog",
-        destination: "https://digitalagents.in/blog", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+        destination: "https://digitalagents.in/blog", 
       },
       {
         source: "/blog/:path*",
-        destination: "https://digitalagents.in/blog/:path*", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+        destination: "https://digitalagents.in/blog/:path*",
       },
     ];
   },
