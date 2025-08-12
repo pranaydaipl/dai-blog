@@ -74,17 +74,17 @@ const config = {
 		],
 	},
 	async rewrites() {
-		return [
-			{
-				source: '/ping/data-event',
-				destination: `${ANALYTICS_BASE_URL}/api/data-event`,
-			},
-			{
-				source: '/api/analytics',
-				destination: `${HASHNODE_ADVANCED_ANALYTICS_URL}/api/analytics`,
-			},
-		];
-	},
+    return [
+      {
+        source: "/blog",
+        destination: "https://digitalagents.in/blog", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+      },
+      {
+        source: "/blog/:path*",
+        destination: "https://digitalagents.in/blog/:path*", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+      },
+    ];
+  },
 	async redirects() {
 		return await getRedirectionRules();
 	},
